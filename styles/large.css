@@ -1,0 +1,58 @@
+/* Styling the Large Page */
+@media screen and (min-width: 32em) { 
+    header .profile-brand { 
+        justify-content: center;
+    }
+    header .profile-brand h1 { 
+        font-size: 20px;
+    }
+    header .toggle-btn { 
+        position: absolute;
+        display: none;
+    }
+    nav ul { 
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+    }
+    nav ul li { 
+        display: block;
+        flex: 1 1 100%;
+    }
+    nav ul li a { 
+        text-align: center;
+        display: block;
+    }
+    nav ul li a:hover { 
+        background-color: maroon;
+        color: white;
+    }
+    .sec-one, .sec-two, .sec-three { 
+        border: 2px solid rgb(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 4px 4px rgba(00, 00, 00, 0.5);
+    }
+    main .row-one { 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+        margin-bottom: 1rem;
+    }
+    .row-two .course-category { 
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid black;
+    }
+    .row-two .course-category button { 
+        justify-self: center;
+        flex: 0;
+        padding: 1rem;
+        display: block;
+        flex: 0 10%;
+    }
+   
+
+    main .row-two .individual-courses { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

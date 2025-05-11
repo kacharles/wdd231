@@ -1,0 +1,167 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    background-color: #000080;
+    color: white;
+    padding: 0.75rem;
+}
+.profile-brand { 
+    display: flex;
+}
+.profile-brand img { 
+    box-shadow: 2px 2px 10px 5px rgba(00, 00, 00, 0.5);
+    border-radius: 5px;
+    align-self: center;
+}
+.profile-brand h1 {
+    align-self: center;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+#menu-btn { 
+    display: flex;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.75rem;
+    justify-self: right;
+}
+.toggle-btn { 
+    align-content: center;
+}
+
+
+
+
+header #menu-btn::before {
+    content: "☰";
+}
+header #menu-btn.activate::before { 
+    content: "X";
+}
+nav { 
+    background-color: #000080;
+}
+nav ul { 
+    display: flex;
+    flex-direction: column;
+    
+}
+nav ul li { 
+    display: none;
+    list-style: none;
+    flex: 1 1 100%;
+    
+}
+.activate li { 
+    display: block;
+}
+nav a { 
+    text-decoration: none;
+    font-size: 18px;
+    /* padding: 1rem; */
+    color: white;
+    display: block;
+    padding: 1rem;
+
+}
+nav a:hover { 
+    background-color: maroon;
+    color: white;
+}
+
+header, nav,  main, footer  {
+    margin: 0 auto; 
+    max-width: 1000px;
+}
+
+
+/* Styling The Body */
+main { 
+    padding: 1rem;
+}
+
+main h1 { 
+    color: #000080;
+    font-size: 20px;
+}
+.sec-one, .sec-two, .sec-three { 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sec-one h2, .sec-two h2, .sec-three h2 { 
+    text-align: center;
+    padding: 1rem;
+    background-color: #000080;
+    color: white;
+}
+figure img { 
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    justify-self: center;
+    padding: 1rem;
+}
+figcaption { 
+    text-align: center;
+}
+.course-category { 
+    display: flex;
+    justify-content: center;
+}
+.course-category button { 
+    padding: 0.5rem;
+    display: block;
+    background-color: black;
+    color: white;
+    margin: 0.5rem;
+    flex: 1 1 100%;
+    text-align: center;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+}
+.individual-courses { 
+    display: flex;
+    flex-direction: column;
+}
+.individual-courses button { 
+    padding: 0.5rem;
+    display: block;
+    background-color: black;
+    color: white;
+    margin: 0.5rem;
+    flex: 1 1 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+.individual-courses button:nth-child(odd) { 
+    background-color: maroon;
+}
+
+footer { 
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #000080;
+}
+footer p { 
+    text-align: center;
+    padding: 0.5rem;
+    color: white
+}

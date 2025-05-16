@@ -62,14 +62,27 @@ nav ul {
     flex-direction: column;
     
 }
-nav ul li { 
+/* don't need to display the ul menu links as none */
+/* nav ul li { 
     display: none;
     list-style: none;
     flex: 1 1 100%;
     
-}
-.activate li { 
+} */ 
+/* .activate li { 
     display: block;
+} */
+
+nav { 
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+nav ul {
+    overflow: hidden;
+}
+nav.activate { 
+    grid-template-rows: 1fr;
 }
 nav a { 
     text-decoration: none;

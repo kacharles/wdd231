@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+            "name": "BYU-Pathway Worldwide", 
+            "address": "Utah", 
+            "phone": "NA", 
+            "website": "https://byupathway.edu", 
+            "image": "images/byupathway.webp", 
+            "ml": "Gold"
+        },
+        {
+            "name": "edX", 
+            "address": "Maryland", 
+            "phone": "NA", 
+            "website": "https://edx.org", 
+            "image": "images/edx.webp", 
+            "ml": "Bronze"
+        }, 
+        {
+            "name": "Thinkific", 
+            "address": "Canada", 
+            "phone": "NA", 
+            "website": "https://thinkific.com", 
+            "image": "images/thinkific.webp", 
+            "ml": "Silver"
+        },
+        {
+            "name": "SkillShare", 
+            "address": "New York",
+            "phone": "NA", 
+            "website": "https://skillshare.com", 
+            "image": "images/skillshare.webp", 
+            "ml": "Silver"
+        },
+        {
+            "name": "Udemy", 
+            "address": "California", 
+            "phone": "NA", 
+            "website": "https://udemy.com", 
+            "image": "images/udemy.webp", 
+            "ml": "Bronze"
+        }, 
+        {
+            "name": "Coursera", 
+            "address": "California", 
+            "phone": "NA", 
+            "website": "https://coursera.org", 
+            "image": "images/coursera.webp", 
+            "ml": "Gold"
+        },
+        {
+            "name": "LinkedIn Learning", 
+            "address": "NA", 
+            "phone": "NA", 
+            "website": "https://linkedin.com", 
+            "image": "images/linkedinlearning.webp", 
+            "ml": "Bronze"
+        },
+        {
+            "name": "Data Camp", 
+            "address": "New York", 
+            "phone": "NA", 
+            "website": "https://datacamp.com", 
+            "image": "images/datacamp.webp", 
+            "ml": "Gold"
+        }, 
+        {
+            "name": "Free Code Camp", 
+            "address": "Texas", 
+            "phone": "NA", 
+            "website": "https://freecodecamp.org", 
+            "image": "images/freecodecamp.webp", 
+            "ml": "Silver"
+        }
+    ]
+}

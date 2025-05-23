@@ -1,0 +1,64 @@
+
+/* Defining Media Queries */
+
+@media screen and (min-width: 768px) { 
+    .logo-img h1 { 
+        font-size: 24px; 
+        font-weight: 700;
+        padding: 0.5rem;
+    }
+    .logo-img img  { 
+        display: block; 
+    }
+
+    header nav button { 
+        display: none;
+    }
+
+    #mobile-menu { 
+        display: none;
+    }
+
+    header nav ul { 
+        display: flex;
+        list-style-type: none;
+        background-color: #eee;
+        align-items: center;
+        width: 100%;
+        /* height: 50px; */
+}
+
+header nav ul li { 
+    display: flex;
+    flex: 1 1 100%;
+} 
+
+.sec-one { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+}
+.sec-two { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+}
+
+@media screen and (max-width: 768px) { 
+    main .grid { 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main .list section { 
+        display: grid; 
+        grid-template-columns: 1fr;
+        /* text-align: center; */
+        /* margin-top: 2rem 0; */
+    }
+}
+
+
+
+

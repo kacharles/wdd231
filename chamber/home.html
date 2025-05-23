@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Alfred Koenig">
+    <meta name="description" content="Lefkosa Chamber of Commerce is designed to connect and grow local businesses in Northern Cyprus"> 
+
+    <meta property="og:title" content="Charles Alfred Koenig | WDD 230 | Web Frontend Development">
+    <meta property="og:description" content="WDD 230 Web Frontend Development | Lefkosa Chamber of Commerce Home Page">
+    <meta property="og:image" content="images/chamber-logo.png">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/chamber-favicon.png" type="image/png">
+    <script src="scripts/chamber.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    
+
+    <title>Lefkosa Chamber Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo-img">
+            <a href="index.html"><img src="images/chamber-logo.webp" alt="Logo Image" width="200" height="100"></a>
+            <h1>Lefkosa Chamber</h1>
+        </div>
+        <nav>
+            <button id="btn"></button>
+            <ul id="nav-menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+            <div id="drop-down">
+                    <ul id="mobile-menu" class="mobile-menu" >
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+            </div>
+            
+    
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width:900px )" srcset="images/cham-md.webp" >
+                <source media="(min-width:1200px)" srcset="images/cham-lg.webp">
+                <img src="images/cham-sm.webp" alt="Chamer Logo" width="2" height="1">
+            </picture>
+            <a href="join.html" style="font-size: 20px;"><button>Join</button></a>
+        </div>
+
+        <div class="sec-one">
+            <section class="card">
+                <span style="font-size: 18px; font-weight: 700;">Event Description</span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Provident placeat dolores saepe ratione laborum doloremque ea 
+                    deserunt, culpa rerum mollitia earum. At quam sunt deserunt 
+                    perspiciatis consequatur ullam rerum facilis?
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Provident placeat dolores saepe ratione laborum doloremque ea 
+                    deserunt, culpa rerum mollitia earum. At quam sunt deserunt 
+                    perspiciatis consequatur ullam rerum facilis?
+                </p>
+            </section>
+
+            <section class="card">
+                <span style="font-size: 18px; font-weight: 700;" >Weather Info</span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Provident placeat dolores saepe ratione laborum doloremque ea 
+                    deserunt, culpa rerum mollitia earum. At quam sunt deserunt 
+                    perspiciatis consequatur ullam rerum facilis?
+                </p>
+            </section>
+        </div>
+        <h2>Membership Spotlight</h2>
+            <div class="sec-two">
+                <section class="cards">
+                    <span style="font-size: 18px; font-weight: 700;" >Business Highlight</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Alias culpa aut nemo perferendis aspernatur, assumenda consectetur 
+                        est incidunt beatae repellendus dicta nostrum nihil architecto qui 
+                        corrupti deserunt pariatur maxime facilis!</p>
+                </section>
+                <section class="cards">
+                    <span style="font-size: 18px; font-weight: 700;" >Sponsors Recognition</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Alias culpa aut nemo perferendis aspernatur, assumenda consectetur 
+                        est incidunt beatae repellendus dicta nostrum nihil architecto qui 
+                        corrupti deserunt pariatur maxime facilis!</p>
+                </section>
+                <section class="cards">
+                    <span style="font-size: 18px; font-weight: 700;" >Networking Opportunities</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Alias culpa aut nemo perferendis aspernatur, assumenda consectetur 
+                        est incidunt beatae repellendus dicta nostrum nihil architecto qui 
+                        corrupti deserunt pariatur maxime facilis!</p>
+                </section>
+                
+            </div>
+       
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="contact">Contact: 📞 <a href="tel:" style="color: yellow; text-decoration: none;">+23177072935</a> | <a style="color: yellow; text-decoration: none;" href="mailto:">✉ ckoenig@byupathway.edu</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

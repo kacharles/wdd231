@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Alfred Koenig">
+    <meta name="description" content="Lefkosa Chamber of Commerce is designed to connect and grow local businesses in Northern Cyprus"> 
+
+    <meta property="og:title" content="Charles Alfred Koenig | WDD 230 | Web Frontend Development">
+    <meta property="og:description" content="WDD 230 Web Frontend Development | Lefkosa Chamber of Commerce Home Page">
+    <meta property="og:image" content="images/chamber-logo.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join-base.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="icon" href="images/chamber-favicon.png" type="image/png">
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    
+
+    <title>Join</title>
+</head>
+<body>
+    <header>
+        <div class="logo-img">
+            <img src="images/chamber-logo.webp" alt="Logo Image" width="200" height="100">
+            <h1>Lefkosa Chamber</h1>
+        </div>
+        <nav>
+            <button id="btn"></button>
+            <ul id="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+            <div id="drop-down">
+                    <ul id="mobile-menu" class="mobile-menu" >
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a class="active"href="join.html">Join</a></li>
+                    </ul>
+            </div>
+            
+   
+    <main>
+        <h1>Join</h1>
+        <div class="main-cont">
+        <section>
+            <h2>Sign Up</h2>
+             <form method="GET" id="form" action="thank-you.html">
+                <label for="fname">First Name<input type="text" name="fname" pattern="[a-zA-Z0-9\_s]{8,}"  id="fname" required></label>
+                <label for="lname">Last Name<input type="text" name="lname" pattern="[a-zA-Z0-9\_s]{8,}"  id="lname" required></label>
+                <label for="position">Position<input type="text" name="position" pattern="[a-zA-Z0-9\_s]{8,}"  id="position" required></label>
+                <!-- <label for="password">Password<input type="password" id="password" name="Password" required></label> -->
+                <!-- <label for="repeat-password">Repeat Password<input type="password" name="repeat-password" id="repeat-password" required></label> -->
+                <label for="Email">Email<input type="email" name="Email" id="Email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu]{10,}" placeholder="Please enter a valid email address" required></label>
+                <label for="phone">Phone<input type="tel" name="phone" pattern="[0-9\+]{8,}"  id="phone" required></label>
+                <!-- <label for="rating">Page Rating<input type="range" name="Rating"  -->
+                    <!-- <input type="rating" id="rating" min="1" max="5" value="1" step="1" list="rangevalues"></label> -->
+                    <!-- <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist> -->
+                <label for="organization">Organization <input type="text" placeholder="Please enter your organization's name" id="organization" pattern="[a-zA-Z0-9\_s]{8,}" required></label>
+                <label>Membership Level</label>
+
+                <label for="np-membership"><input type="radio" name="membership" value="np-membership" id="np-membership">NP Membership</label>
+
+                <label for="bz-membership">
+                        <input type="radio" name="membership" value="bz-membership" id="bz-membership">Bronze Membership</label>
+                
+                <label for="sv-membership">
+                            <input type="radio" name="membership" value="sv-membership" id="sv-membership">Silver Membership</label>
+                
+                <label for="g-membership">
+                                <input type="radio" name="membership" value="g-membership" id="g-membership">Gold Membership</label>
+
+                <input type="hidden" name="timestamp" id="timestamp" hidden>
+                <button type="submit" id="submit">Sign up</button>
+                <div id="message"></div>
+            </form>
+        </section>
+        <section>
+            <h2>Why join our chamber?</h2>
+            <p><span>NP Membership</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi accusantium dolorum aspernatur laudantium sapiente, qui, nostrum velit, a quisquam natus hic amet. Nostrum, magnam ducimus? Libero obcaecati laborum provident.</p>
+            <p><span>Bronze Membership </span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi accusantium dolorum aspernatur laudantium sapiente, qui, nostrum velit, a quisquam natus hic amet. Nostrum, magnam ducimus? Libero obcaecati laborum provident.</p>
+            <p><span>Silver Membership</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi accusantium dolorum aspernatur laudantium sapiente, qui, nostrum velit, a quisquam natus hic amet. Nostrum, magnam ducimus? Libero obcaecati laborum provident.</p>
+            <p><span>Gold Membership</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi accusantium dolorum aspernatur laudantium sapiente, qui, nostrum velit, a quisquam natus hic amet. Nostrum, magnam ducimus? Libero obcaecati laborum provident.</p>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="contact">Contact: 📞 +23177072935 | ✉ ckoenig@byupathway.edu</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

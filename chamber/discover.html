@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Alfred Koenig">
+    <meta name="description" content="Lefkosa Chamber of Commerce is designed to connect and grow local businesses in Northern Cyprus"> 
+
+    <meta property="og:title" content="Charles Alfred Koenig | WDD 230 | Web Frontend Development">
+    <meta property="og:description" content="WDD 230 Web Frontend Development | Lefkosa Chamber of Commerce Home Page">
+    <meta property="og:image" content="images/chamber-logo.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/discover-base.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
+    <link rel="icon" href="images/chamber-favicon.png" type="image/png">
+    <script src="scripts/chamber.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Discover</title>
+</head>
+<body>
+    <header>
+        <div class="logo-img">
+            <img src="images/chamber-logo.webp" alt="Logo Image" width="200" height="100">
+            <h1>Lefkosa Chamber</h1>
+        </div>
+        <nav>
+            <button id="btn"></button>
+            <ul id="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+            <div id="drop-down">
+                    <ul id="mobile-menu" class="mobile-menu" >
+                        <li><a href="home.html">Home</a></li>
+                        <li><a class="active" href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+            </div>
+            
+    
+    <main>
+        <h1>Discover</h1>
+        <div class="parent">
+            <div class="side-bar">
+                <section>
+                <h2>Our Sponsors</h2>
+                <img src="images/cyprus-image7-small.webp" alt="Empty Image" width="200" height="200"  loading="lazy">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Accusantium, laborum ratione? Culpa, tempore rerum quasi.
+                </p>
+                <button>Read More</button>
+                </section>
+
+                <section>
+                    <h2>Silver Sponsor</h2>
+                    <img src="images/cyprus-image6.webp-sm.webp" alt="Empty Image" width="200" height="200"  loading="lazy">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusantium, laborum ratione? Culpa, tempore rerum quasi.
+                    </p>
+                    <button>Read More</button>
+                    </section>
+                    
+                    <section>
+                        <h2>Gold Sponsor</h2>
+                        <img src="images/cyprus-image5-sm.webp" alt="Empty Image" width="200" height="200" loading="lazy">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusantium, laborum ratione? Culpa, tempore rerum quasi. 
+    
+                        </p>
+                        <button>Read More</button>
+                    </section>
+
+                    <section>
+                        <h2>Bronze Sponsor</h2>
+                        <img src="images/cyprus-image3-sm.webp" alt="Empty Image" width="200" height="200" loading="lazy">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusantium, laborum ratione? Culpa, tempore rerum quasi.
+                        </p>
+                        <button>Read More</button>
+                    </section>
+
+                    <section>
+                        <h2>Platinum Sponsor</h2>
+                        <img src="images/cyprus-image4.webp" alt="Empty Image" width="200" height="200" loading="lazy">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusantium, laborum ratione? Culpa, tempore rerum quasi.
+                        </p>
+                        <button>Read More</button>
+                    </section>
+                    <section>
+                        <h2>Our Chamber</h2>
+                        <p>
+                            First Visit: <span id="first-visit"></span>
+                        </p>
+                        <p>Recent Visit: <span id="recent-visit"></span></p>
+
+                        <p id="message"></p>
+                        <button>Read More</button>
+                    </section>
+
+            </div>
+            <div class="img-content">
+                <section>
+                    <picture>
+                        <source srcset="images/cyprus-image7-small.webp" media="(max-width:500px)">
+                        <source srcset="images/cyprus-image7-md.webp" media="(max-width: 1000px)">
+                        <img src="images/cyprus-image7-md.webp" alt="Empty Card" width="200" height="100" loading="lazy">
+                    </picture>
+                </section>
+                <section>
+                    <picture>
+                        <source srcset="images/cyprus-image6.webp-sm.webp" media="(max-width: 500px)">
+                        <source srcset="images/cyprus-image6-md.webp" media="(max-width: 1000px)">
+                        <img src="images/cyprus-image6-md.webp" alt="Empty Card" width="200" height="100" loading="lazy">
+                    </picture>
+                </section>
+                <section>
+                    <picture>
+                        <source srcset="images/cyprus-image5-sm.webp" media="(max-width:500px)">
+                        <source srcset="images/cyprus-image5-md.webp" media="(max-width:1000px)">
+                        <img src="images/cyprus-image5-md.webp" alt="Empty Card" width="200" height="100" loading="lazy">
+                    </picture>
+                </section>
+                <section>
+                    <picture>
+                        <source srcset="images/cyprus-image3-sm.webp" media="(max-width:500px)">
+                        <source srcset="images/cyprus-image3-sm.webp" media="(max-width:1000px)">
+                        <img src="images/cyprus-image3-sm.webp" alt="Empty Card" width="200" height="100" loading="lazy">
+                    </picture>
+                </section>
+                <section>
+                    <picture>
+                        <source srcset="images/cyprus-image2-md.webp" media="(max-width: 500px)">
+                        <source srcset="images/cyprus-image2-md.webp" media="(max-width:1000px)">
+                        <img src="images/cyprus-image2-md.webp" alt="Empty Card" width="200" height="100" loading="lazy">
+                    </picture>
+                </section>
+                <section>
+                    <picture>
+                        <source srcset="images/cyprus-image1-sm.webp" media="(max-width: 500px)">
+                        <source srcset="images/cyprus-image1-sm.webp" media="(max-width: 1000px)">
+                        <img src="images/cyprus-image1-sm.webp" alt="Empty Card" width="200" height="100" loading="lazy">
+                    </picture>
+                </section>
+                
+                
+                
+            </div> <!--End of image-content division-->
+        </div> <!--End of parent division-->
+       
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="contact">Contact: 📞 +23177072935 | ✉ ckoenig@byupathway.edu</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

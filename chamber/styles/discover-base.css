@@ -1,0 +1,253 @@
+/* General Styling */
+* { 
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Styling the header and all its content*/
+
+header, #mobile-menu, main, footer { 
+    max-width: 900px;
+    padding: 1rem; 
+    margin: 0 auto;
+}
+
+header { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: darkblue;
+    justify-content: space-around;
+}
+
+/* Display the div in the header with the logo image and business name as flex */
+.logo-img { 
+    display: flex;
+    /* padding: 1rem;  */
+}
+.logo-img img { 
+    width: 150px;
+    height: auto;
+    display: none;
+}
+.logo-img h1 {  
+    align-self: center;
+    /* padding: 0.5rem; */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffff00;
+    font-family: "Times New Roman", sans-serif;
+    text-transform: uppercase;
+}
+
+header nav { 
+    /* background-color: #eee; */
+    align-content: center;
+    justify-items: end;
+    justify-content: end;
+    
+}
+header nav ul { 
+    border-radius: 10px;
+    box-shadow: 0 0 12px black, inset 0 0 12px darkblue;
+    overflow: hidden;
+}
+
+/* Hide the navigation list in the small menu.
+More styling for this is done in the large css called large.css file */
+
+header nav ul li { 
+    display: none;
+}
+
+/* styling the drop-down menu button */
+header #btn { 
+    background-color: transparent;
+    color: yellow;
+    border: none;
+    /* border: 2px solid black; */
+    font-size: 20px; 
+    line-height: 25px;
+    width: 30px;
+}
+
+header nav button:hover { 
+    cursor: pointer;
+}
+
+header nav a { 
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+header nav a:hover { 
+    background-color: rgb(0, 255, 255);
+    color: #000080;
+    box-shadow: 0 0 12px black, inset 0 0 12px;
+    font-weight: 700;
+}
+/* End of styling header content */
+
+/* Styling the mobile-menu list */
+
+#mobile-menu { 
+    /* display: block; */
+    
+    /* background-color: #eee; */
+    background-color: #000080;
+    /* color: black;
+     */
+     color: yellow;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: 0;
+    /* box-shadow: 0 0 12px black, inset 0 0 12px darkblue; */
+    overflow: hidden;
+}
+#mobile-menu.activate { 
+    border-top: 2px solid rgb(255, 255, 255, 0.2);
+}
+
+ #mobile-menu li { 
+    display: none;
+    list-style: none;
+    flex: 1 1 100%;
+} 
+ /* Comment out the styling the hide the menu so now it's showing */
+
+#mobile-menu a { 
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 700;
+    /* color: black; */
+    color: yellow;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#mobile-menu a:hover { 
+    background-color: rgb(255, 255, 255, 0.2);
+    /* background-color: rgb(0, 0, 0, 0.5); */
+    /* color: #000080; */
+    /* box-shadow: 0 0 12px black, inset 0 0 12px; */
+    font-weight: 700;
+}
+#mobile-menu a.active{ 
+    background-color: rgba(0,0,0, 0.5);
+}
+
+/* Adding a content to the button before and after click */
+header #btn::before { 
+    content: "\2630";
+}
+header #btn.activate::before { 
+    content: "X";
+}
+#drop-down .activate li { 
+    display: block;
+} 
+ /* Comment out the drop-down that show the menu */
+
+
+main { 
+    background-color: lightgray;
+    /* min-height: 1000px; */
+}
+
+main .parent { 
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.parent .side-bar { 
+    /* border: 1px solid black; */
+    border-left: 2px solid black;
+    /* background-color: darkblue; */
+    padding: .15rem 0;
+
+}
+.side-bar button { 
+    font-weight: 700;
+}
+
+
+.parent section { 
+    /* border: 1px dashed black; */
+    /* margin: 1rem 0; */
+    padding: .5rem;
+
+}
+
+.parent h2 {
+    background-color: darkblue;
+    padding: 0.5rem;
+    color: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.parent p { 
+    /* padding-top: 0rem; */
+    padding-left: 0.2rem;
+}
+.parent img{ 
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.parent img:hover { 
+    filter: saturate(50%);
+}
+.parent .side-bar img { 
+    /* margin-top: .5rem; */
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.parent .img-content img:hover { 
+    box-shadow: 0 0 10px black;
+}
+.side-bar img:hover { 
+    border-radius: 10px;
+    /* box-shadow: 0 0 25px black; */
+    /* rotate: 0.5 turn; */
+    border-radius: 100px 250px 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    filter: contrast(50%);
+    filter: saturate(50%);
+}
+
+.parent button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #eee;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+.parent button:hover{ 
+    cursor: pointer;
+    box-shadow: 0 0 5px black, inset 0 0 10px rgb(0, 0, 0, 0.5);
+}
+footer { 
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: darkblue;
+    color: yellow;
+    text-align: center;
+}
+footer p {
+    margin: 0.5rem 0;
+    font-size: larger;
+}
+
+#copyright { 
+    color: white; 
+}
+.active { 
+    background-color: #000080;
+    color: yellow;
+}

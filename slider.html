@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Slider</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider-container {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .slide {
+      min-width: 100%;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+
+    .nav-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+
+    .prev, .next {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider-container">
+    <div class="slides">
+      <div class="slide"><img src="images/coconut-trees.webp" alt="Slide 1"></div>
+      <div class="slide"><img src="images/profile.jpg" alt="Slide 2"></div>
+      <div class="slide"><img src="images/coconut-trees.webp" alt="Slide 3"></div>
+    </div>
+
+    <div class="nav-buttons">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    const slides = document.querySelector('.slides');
+    const slide = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+
+    let index = 0;
+
+    function updateSlider(position) {
+      slides.style.transform = 'translateX(' + (-position * 100) + '%)';
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[position].classList.add('active');
+    }
+
+    function showNext() {
+      index = (index + 1) % slide.length;
+      updateSlider(index);
+    }
+
+    function showPrev() {
+      index = (index - 1 + slide.length) % slide.length;
+      updateSlider(index);
+    }
+
+    next.addEventListener('click', showNext);
+    prev.addEventListener('click', showPrev);
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        index = i;
+        updateSlider(index);
+      });
+    });
+ 
+    // Auto slide every 5 seconds
+    setInterval(showNext, 5000);
+  </script>
+
+</body>
+</html>

@@ -206,9 +206,28 @@ main img {
     padding: 1rem;
     text-align: center;
 }
+#forecast1 span { 
+    background-color: lightgray;
+} 
 .card p { 
     padding: 10px;
 }
+
+#town-info { 
+    background-color: lightgray;
+}
+#town-info img { 
+    width: 30%;
+    height: auto;
+}
+#town-info p { 
+    text-align: center;
+}
+#town-info span { 
+    background-color: lightgray;
+    color: black;
+}
+
 
 /* Section two styling */
 
@@ -233,6 +252,30 @@ main img {
 .cards p { 
     padding: 10px;
 }
+#fc-info-one,
+#fc-info-two,
+#fc-info-three,
+#fc-info-four,
+#fc-info-five { 
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#fc-info-one img,
+#fc-info-two img,
+#fc-info-three img
+{ 
+    width: 25%;
+}
+#fc-info-one span,
+#fc-info-two span,
+#fc-info-three span
+ { 
+    align-self: center;
+    background-color: lightgray;
+    color: black;
+}
+
+
 
 
 footer { 

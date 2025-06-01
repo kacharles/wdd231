@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/chamber-favicon.png" type="image/png">
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,13 +79,37 @@
             </section>
 
             <section class="card">
-                <span style="font-size: 18px; font-weight: 700;" >Weather Info</span>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Provident placeat dolores saepe ratione laborum doloremque ea 
-                    deserunt, culpa rerum mollitia earum. At quam sunt deserunt 
-                    perspiciatis consequatur ullam rerum facilis?
-                </p>
+                <span style="font-size: 18px; font-weight: 700;">Weather Info</span>
+                <div id="town-info">
+                    <p id="town"></p>
+                    <p id="weather-info"><img id="graphic" src="https://openweathermap.org/img/wn/02n@2x.png" alt="Img">
+                        <span id="temperature"></span>
+                        <span id="description"></span></p>
+                </div>
+            </section>
+              <section class="card">
+                <span style="font-size: 18px; font-weight: 700;" >3-Days Forecast</span>
+              <div id="fc-info-one">
+                    <img src="" alt="" id="fc-img-one"> 
+                    <span style="background-color: lightgray;" id="fc-temp-one"></span>
+                    <span id="fc-dt-one"></span>
+              </div>
+                <div id="fc-info-two">
+                    <img src="" alt="" id="fc-img-two"> 
+                    <span style="background-color: lightgray;" id="fc-temp-two"></span>
+                    <span id="fc-dt-two"></span>
+              </div>
+                <div id="fc-info-three">
+                    <img src="" alt="" id="fc-img-three"> 
+                    <span style="background-color: lightgray;" id="fc-temp-three"></span>
+                    <span id="fc-dt-three"></span>
+              </div>
+                <div id="fc-info-three">
+                    <img src="" alt="" id="fc-img-three"> 
+                    <span style="background-color: lightgray;" id="fc-temp-three"></span>
+                    <span id="fc-dt-three"></span>
+              </div>
+              
             </section>
         </div>
         <h2>Membership Spotlight</h2>

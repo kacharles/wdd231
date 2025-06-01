@@ -30,7 +30,7 @@ header {
     height: auto;
     display: none;
 }
-.logo-img h1 {  
+.logo-img span {  
     align-self: center;
     /* padding: 0.5rem; */
     font-size: 1rem;
@@ -38,6 +38,7 @@ header {
     color: #ffff00;
     font-family: "Times New Roman", sans-serif;
     text-transform: uppercase;
+    padding: 10px;
 }
 
 header nav { 

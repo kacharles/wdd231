@@ -39,6 +39,7 @@ header {
     font-family: "Times New Roman", sans-serif;
     text-transform: uppercase;
     padding: 10px;
+    font-size:  18px;
 }
 
 header nav { 
@@ -206,6 +207,8 @@ main img {
     display: block;
     padding: 1rem;
     text-align: center;
+    font-weight: 700;
+    font-size: 18px;
 }
 #forecast1 span { 
     background-color: lightgray;
@@ -290,6 +293,10 @@ footer {
 footer p {
     margin: 0.5rem 0;
     font-size: larger;
+}
+#contact > a { 
+    color: yellow; 
+    text-decoration: none;
 }
 
 #copyright { 

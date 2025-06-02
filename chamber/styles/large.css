@@ -54,6 +54,11 @@ header nav ul li {
         justify-self: end;
         justify-items: end;
     }
+
+    main .grid { 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 

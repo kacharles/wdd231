@@ -39,7 +39,7 @@ header {
     font-family: "Times New Roman", sans-serif;
     text-transform: uppercase;
     padding: 10px;
-    font-size:  18px;
+    font-size:  18px ;
 }
 
 header nav { 
@@ -277,6 +277,30 @@ main img {
     align-self: center;
     background-color: lightgray;
     color: black;
+}
+
+main .grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    /* background-color: red; */
+    /* background-color: white; */
+    /* margin-top: 1rem 0; */
+}
+.grid section { 
+    background-color: white;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+main .gird section img { 
+    width: 100%; 
+    height: 150px;
+    border-radius: 12px;
 }
 
 

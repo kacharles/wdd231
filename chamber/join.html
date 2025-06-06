@@ -8,8 +8,9 @@
 
     <meta property="og:title" content="Charles Alfred Koenig | WDD 230 | Web Frontend Development">
     <meta property="og:description" content="WDD 230 Web Frontend Development | Lefkosa Chamber of Commerce Home Page">
-    <meta property="og:image" content="images/chamber-logo.webp">
+   <meta property="og:image" content="https://kacharles.github.io/wdd231/chamber/images/chamber-logo.jpg">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kacharles.github.io/wdd231/chamber/join.html">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/join-base.css">
@@ -30,7 +31,7 @@
     <header>
         <div class="logo-img">
             <img src="images/chamber-logo.webp" alt="Logo Image" width="200" height="100">
-            <h1>Lefkosa Chamber</h1>
+            <span>Lefkosa Chamber</span>
         </div>
         <nav>
             <button id="btn"></button>
@@ -47,7 +48,7 @@
                         <li><a href="home.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="directory.html">Directory</a></li>
-                        <li><a class="active"href="join.html">Join</a></li>
+                        <li><a class="active" href="join.html">Join</a></li>
                     </ul>
             </div>
             
@@ -57,7 +58,7 @@
         <div class="main-cont">
         <section>
             <h2>Sign Up</h2>
-             <form method="GET" id="form" action="thank-you.html">
+             <form method="GET" id="form" action="thankyou.html">
                 <label for="fname">First Name<input type="text" name="fname" pattern="[a-zA-Z0-9\_s]{8,}"  id="fname" required></label>
                 <label for="lname">Last Name<input type="text" name="lname" pattern="[a-zA-Z0-9\_s]{8,}"  id="lname" required></label>
                 <label for="position">Position<input type="text" name="position" pattern="[a-zA-Z0-9\_s]{8,}"  id="position" required></label>
@@ -75,6 +76,14 @@
                         <option value="5">5</option>
                     </datalist> -->
                 <label for="organization">Organization <input type="text" placeholder="Please enter your organization's name" id="organization" pattern="[a-zA-Z0-9\_s]{8,}" required></label>
+                
+                <label for="description">Description 
+                    <textarea  id="description" pattern="[a-zA-Z0-9\_s]{8,}" required cols="51"; rows="5";>Please enter the description here.</textarea>
+
+                </label>
+
+
+
                 <label>Membership Level</label>
 
                 <label for="np-membership"><input type="radio" name="membership" value="np-membership" id="np-membership">NP Membership</label>

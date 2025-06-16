@@ -1,0 +1,18 @@
+main img { 
+    width: 100%; 
+    height: auto;
+    margin-bottom: -1rem;
+}
+
+main section { 
+    margin: 1rem 0;;
+}
+
+h3 { 
+    background-color: #ffc328;
+    color: #414142;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+}

@@ -1,0 +1,152 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* Applying general styling to the body element */
+body { 
+    font-family: "Oxygen", sans-serif; 
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+/* Styling the header section */
+
+header {
+    display: flex; 
+    background-color: rgb(0, 0, 139); /*Dark Blue*/
+    color: white;
+    min-height: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+header h1 { 
+    font-family: "Bebas Nue", sans-serif;
+    padding: 1rem;
+    font-weight: 700;
+    justify-self: center;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+nav { 
+    /* background-color: rgba(0,0,139, 0.8); */
+    background-color: rgb(238, 238, 238); /*Very Light Gray*/
+    margin: 0 auto; 
+    max-width: 900px;
+}
+#drop-down-menu { 
+    width: 40px; 
+    margin: 0 auto;
+    line-height: 20px;
+
+}
+nav #drop-down-menu::before { 
+    content: "\2630";
+    font-size: 24px;
+    display: block;
+}
+nav #drop-down-menu.activate::before { 
+    /* content: "\2716"  */
+    content: "\2716";
+}
+
+.activate li { 
+    display: block;
+}
+
+
+nav ul li { 
+    display: none;
+}
+nav a { 
+    display: block;
+    color: #000000;
+    font-family: "Oxygen", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+nav a:hover { 
+    background-color: rgb(211, 211, 211, 0.5);
+    color: darkblue;
+    box-shadow: 0 0 2px rgb(0, 0, 0), inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+nav a:active, a:visited { 
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main { 
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: lightgray;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: black;
+}
+h2 { 
+    border-bottom: 2px solid white;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+h2, h3 {
+    font-family: "Bebas Nue", sans-serif;
+    padding:0.5rem 0;
+    /* color: rgb(0, 0, 139); */
+    color: #000050;
+}
+
+p { 
+    color: black;
+    line-height: 25px;
+}
+
+table { 
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 2rem;
+}
+th, td { 
+    padding: 0.5rem;
+}
+table, th, td { 
+    border:  1px solid #ffffff; 
+    border-collapse: collapse;
+    background-color: #d3d3d3;
+}
+caption { 
+    color: #00008b; 
+    font-weight: bold;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+footer { 
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: darkblue;
+    text-align: center;
+    min-height: 6rem;
+}
+footer #copyright { 
+    color: white;
+    align-self: center;
+}
+footer #lastModified { 
+    color: #ffff00;
+}

@@ -1,0 +1,129 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.filter { 
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0.5rem;
+
+}
+.filter button { 
+    padding: 0.5rem; 
+    flex:0 10%;
+    border-radius: 5px;
+    border: none;
+
+}
+.filter #byui { 
+    background-color: #006eb6;
+    color: white;
+    font-weight: 500;
+}
+.filter #ensign {
+    background-color: #006248;
+    color: white;
+    font-weight: 500;
+}
+.filter #all { 
+    background-color: grey;
+    color: black;
+    font-weight: 500;
+}
+main h1 { 
+    color: #414141;
+}
+.cert-sect { 
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.cert-sect span {
+    display: block;
+    padding: 0.30rem;
+    background-color: lightcyan;
+    color: black;
+    text-align: center;
+    /* margin-bottom: 0.30rem; */
+}
+.cert-sect h3 { 
+    display: block;
+    padding: 0.30rem;
+    background-color: #ffc328;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    /* font-size: 16px;
+    font-weight: 900; */
+}
+.cert-sect .certType { 
+    font-size: 18px;
+    font-weight: bold;
+}
+.courses, .main-courses, .emptyRow {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+}
+.courses { 
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* padding: 0.25rem; */
+    /* color: red; */
+}
+.main-courses span, .emptyRow { 
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+.main-courses span:nth-child(3n) {
+    text-align: center;
+}
+/* .main-sec { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.25rem;
+} */
+.title { 
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.main-sec { 
+    display: grid;
+    /* max-width: 1200px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    /* flex-direction: row; */
+    /* grid-template-columns: 1fr 1fr 1fr;
+    width: 100%; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    /* margin-bottom: 2rem; */
+    /* float: left; */
+}
+
+/* .cer-sect {
+    margin-bottom: 2rem;
+} */
+
+@media screen and (max-width: 768px) { 
+    .main-sec { 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cert-sect { 
+        margin-bottom: 0.5rem;
+    }
+    main h2 { 
+        font-size: 18px;
+    }
+    .filter button { 
+    padding: 0.5rem; 
+    flex:0 20%;
+    border-radius: 5px;
+    border: none;
+
+}
+}

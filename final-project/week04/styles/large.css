@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    #drop-down-menu { 
+        display: none;
+    }
+    nav ul { 
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav ul li { 
+        display: block;
+        flex: 1 1 100%;
+    }
+    
+}
+
+@media (max-width: 500px) { 
+    table { 
+        /* width: 100%; */
+        max-width: 100px;
+    }
+}

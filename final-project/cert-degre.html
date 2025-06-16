@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Alfred Koenig">
+    <meta name="description" content="Certificates & Degrees. This page list all certificates and degrees offered through BYU-Pathway.">
+    <link rel="stylesheet" href="styles/cert-degree.css">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- <script src="script/index.js" defer></script> -->
+    <script src="script/toggle-menu.js" defer></script>
+    <!-- <script src="script/cert-degree.js" defer></script> -->
+    <script type="module" src="script/populate-degree.js"></script>
+    <script src="script/footer-info.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Play:wght@400;700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <title>Certificates & Degrees</title>
+</head>
+<body>
+    <div id="header-container">
+        <header>
+          <div class="brand-name">
+            <span>Application Guide</span>
+          </div>
+          <div class="menu">
+            <button id="toggle-btn"></button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="application.html">Application</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="sign-up.html">Sign-up</a></li>
+                    <li><a class="active" href="cert-degre.html">Certificates & Degrees</a></li>
+                </ul>
+            </nav>
+          </div>
+        </header>
+        <ul class="mobile-menu">
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="application.html">Application</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="sign-up.html">Sign-up</a></li>
+            <li><a class="active" href="cert-degre.html">Certificates & Degrees</a></li>
+        </ul>
+    </div> 
+    <div class="filter">
+        <button id="all">All</button><button id="byui">BYU-I</button><button id="ensign"">Ensign</button> <button id="learn-more">Learn More</button>
+    </div>
+    <main>
+        <dialog id="modal">
+            <div>
+                <h2>More About BYU-Pathay Certificates</h2>
+                <button id="close-btn">X</button>
+            </div>
+            <p>Visit <a href="https://byupathway.edu" target="_blank">https://byupathway.edu</a> to learn more about BYU-Pathway Worldwide certificates.
+            
+            </p>
+            
+        </dialog>
+        <h1>Certificates & Degrees</h1>
+    </main>
+
+    <div id="footer-container">
+          <footer>
+                <!-- <p>⚠ Application deadline for the upcoming term is 03 March. Please sign up and let's help you apply and register for free for the next term.</p> -->
+                 <p id="copy-right"></p>
+                 <p id="lmf"></p>
+            </footer>
+    </div> 
+</header>
+</body>
+</html>
+

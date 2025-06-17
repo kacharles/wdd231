@@ -10,6 +10,9 @@
         position: absolute;
         display: none;
     }
+    #animate-me ul {
+        display: flex;
+    }
     nav ul { 
         display: flex;
         flex-direction: row;

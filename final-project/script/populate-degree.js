@@ -21,10 +21,6 @@ export async function getData(url) {
 }
 
 getData(url);
-
-
-
-
 function populateHtml(degrees) { 
       degrees.forEach(degree => {
           // create a list of parent elements to be used. 
@@ -493,25 +489,12 @@ all.addEventListener("click", () => {
          
 
         })
-
-            
             degreeSection.appendChild(degreeTitle);
             degreeSection.append(mainSection);
             degre.appendChild(degreeSection);
             const mainElement = document.querySelector("main"); 
-            // mainElement.appendChild(degre);
-            // mainElement.appendChild(certSection);
-            // mainElement.appendChild(coursesSection);
             mainElement.appendChild(degre);
-            // const byui = document.querySelector("#byui");
-            // byui.addEventListener("click", ()=> {
-            // mainElement.innerHTML = "";
-            // const byuiDegree = degree.filter(d=>d.degreeType === "BYU-I");
-            // //Remove codes from here
-            // byuiDegree.forEach(ndegree => {
-            //   mainElement.innerHTML = "Working, but not as I want";
-            // })
-            // })
+           
       })
 })
 

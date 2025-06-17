@@ -32,6 +32,11 @@
     color: black;
     font-weight: 500;
 }
+.filter #learn-more { 
+    background-color: #ffc328;
+    color: #414141;
+    font-weight: 500;
+}
 main h1 { 
     color: #414141;
 }

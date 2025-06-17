@@ -298,4 +298,8 @@ footer {
         text-align: center;
     }
 
+    #learn { 
+        flex: 0 30%;
+    }
+
 }

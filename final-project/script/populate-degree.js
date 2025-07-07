@@ -1,5 +1,5 @@
 import { degrees } from "./cert-degree.js";
-
+// console.log(degre);
 
 const byuiDegrees = degrees.filter(degree => degree.degreeType === 'BYU-I');
 const ensignDegrees = degrees.filter(degree => degree.degreeType === 'Ensign');
@@ -11,13 +11,19 @@ const ensign = document.querySelector("#ensign");
 const url = "https://kacharles.github.io/sign-up/data/cert-degree.json"; 
 
 export async function getData(url) {
+  let newDegree;
     try {
         const response = await fetch(url); 
         const degrees = await response.json(); 
+        newDegree = degrees;
         populateHtml(degrees);
     } catch (error) {
         console.log(error)
     }
+    function getDegree() { 
+      return newDegree; 
+    }
+    return getDegree();
 }
 
 getData(url);
@@ -93,9 +99,10 @@ function populateHtml(degrees) {
 
           }));
 
-          creditTotals.forEach(certi => {
-            col3.textContent = certi.totalCredits;
-          })
+          // const totalCreditsArray = creditTotals.map(item => item.totalCredits);
+          // col3.textContent = totalCreditsArray;
+         
+         
 
           // console.log(creditTotals);
           
@@ -147,6 +154,7 @@ function populateHtml(degrees) {
 // const degrees = getData.degrees;
 
 // populateHtml();
+
 
 byui.addEventListener("click", () => {
   const mainElement = document.querySelector("main");

@@ -303,3 +303,9 @@ footer {
     }
 
 }
+
+@media screen and (min-width: 769px) { 
+    .mobile-menu { 
+        display: none;
+    }
+}

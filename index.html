@@ -42,6 +42,7 @@
         <div class="row-one">
             <section class="sec-one">
                 <h2>Course Work</h2>
+                <span id="local"></span>
                 <ul>
                     <li></li>
                     <li></li>
@@ -79,6 +80,14 @@
         <p id="current-year"></p>
         <p id="last-modified">Last Update:</p>
     </footer>
-    
+    <script>
+        let name = prompt("Please enter your name");
+        const localStorageValue = document.getElementById("#local").innerHTML = `Charles`; 
+        let getLocalStorage = window.localStorage.getItem("ls-item");
+        getLocalStorage = name;
+        localStorage.setItem("ls-item", getLocalStorage);
+        localStorageValue.textContent = getLocalStorage;
+        console.log(getLocalStorage);
+    </script>
 </body>
 </html>
